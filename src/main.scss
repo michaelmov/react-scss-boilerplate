@@ -1,0 +1,23 @@
+body {
+    font-size: 16px;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s all ease-in-out;
+}
+.heading {
+    font-size: 4rem;
+    color: #8DD6F9;
+    background-color: #2B3A42;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0;
+}
+
+.logo {
+    align-self: flex-start;
+    width: 100px;
+}
