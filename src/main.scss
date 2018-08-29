@@ -1,6 +1,4 @@
-body {
-    font-size: 16px;
-}
+body { font-size: 16px; }
 
 .page-wrapper {
     display: flex;
@@ -8,6 +6,7 @@ body {
     flex-wrap: wrap;
     transition: 0.5s all ease-in-out;
 }
+
 .heading {
     font-size: 4rem;
     color: #8DD6F9;
