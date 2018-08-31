@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const styleLint = require('stylelint');
 
 
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -64,12 +63,7 @@ module.exports = (env, argv) => {
             }
           },
           { loader: 'sass-loader' }, // compiles Sass to CSS
-          { 
-            loader: 'postcss-loader',
-            options: {
-              plugins: [styleLint]
-            }
-          }
+          { loader: 'postcss-loader'} // Autoprefixer, stylelint, etc.
         ]
       }, 
       {
